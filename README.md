@@ -4,7 +4,7 @@ example of using evothings/cordova-eddystone plugin with ionic 2
 ## To Run Demo:
 1. Start mock beacon server run 'node outgoing-beacon/index.js'
 2. From receiving-app folder run 'npm install'
-3. Then from the same folder run 'ionic run android' or 'ionic run ios'  
+3. Then from the same folder run 'ionic run android' (I have only tested this example so far on android)
    (make sure you have the ionic cli installed globally and latest version 'npm install -g ionic')
 4. Mock beacon data can then be viewed in the ionic 2 app
 
