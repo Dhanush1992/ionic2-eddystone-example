@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar color="light">
+        <ion-title>Raw Data</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="beacon">
+        <pre>
+            {{beacon | json}}
+        </pre>
+    </div>
+    <div *ngIf="!beacon">
+        <scan-beacons-card></scan-beacons-card>
+    </div>
+</ion-content>

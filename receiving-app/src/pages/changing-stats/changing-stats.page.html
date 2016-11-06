@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Hello Beacon</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="beacon">
+    <ion-card *ngFor="let key of keys">
+      <ion-card-header>
+        <b>{{key.charAt(0).toUpperCase() + key.substring(1).toLowerCase()}}</b>
+      </ion-card-header>
+      <ion-card-content>
+        {{beacon[key]}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div *ngIf="!beacon">
+    <scan-beacons-card [scanError]="scanError"></scan-beacons-card>
+  </div>
+</ion-content>

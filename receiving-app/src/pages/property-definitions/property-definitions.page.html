@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar color="light">
+        <ion-title>Property Definitions</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let property of properties">
+        <ion-card-header>
+            <b>{{property.header}}</b>
+        </ion-card-header>
+        <ion-card-content>
+            {{property.content}}
+        </ion-card-content>
+    </ion-card>
+</ion-content>

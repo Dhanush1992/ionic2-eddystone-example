@@ -1,0 +1,14 @@
+{
+  "name": "mockbeacon",
+  "version": "1.0.0",
+  "description": "mock eddystone uid beacon with variable battery level / temperature",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Girish Nanda <girishnanda@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eddystone-beacon": "^1.0.7"
+  }
+}
