@@ -5,12 +5,14 @@
 </ion-header>
 
 <ion-content>
-    <div *ngIf="beacon">
-        <pre>
-            {{beacon | json}}
-        </pre>
-    </div>
-    <div *ngIf="!beacon">
-        <scan-beacons-card></scan-beacons-card>
+    <div *ngIf="ready">
+        <div *ngIf="beacon">
+            <pre>
+                {{beacon | json}}
+            </pre>
+        </div>
+        <div *ngIf="!beacon">
+            <scan-beacons-card></scan-beacons-card>
+        </div>
     </div>
 </ion-content>
