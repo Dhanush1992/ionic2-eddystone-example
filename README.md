@@ -10,6 +10,7 @@ example of using evothings/cordova-eddystone plugin with ionic 2
 
 ## To Setup Plugin in Your App
 To use a cordova based plugin that is not part of the ionic collection you need to:
+
 1. Add the plugin via 'ionic add cordova-plugin-name'
 2. Declare the global variable under src/declaratations.d.ts so that the compiler does not throw an error
 3. Only use the plugin after the platform ready promise is returned
